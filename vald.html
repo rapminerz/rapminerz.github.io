@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <title>RapMinerz - Niska</title>
+
+  <script type="text/javascript" src="./dist/vis.js"></script>
+  <link href="./dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+
+
+  <style type="text/css">
+    body {
+      font: 10pt montserrat;
+      color: #333333;
+    }
+    #mynetwork {
+      width: 1500px;
+      height: 800px;
+      border: 1px solid lightgray;
+      background-color:#222222;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+  
+</p>
+
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+{id: 0,  shape: "circularImage",  font:{background:"#08FA8E",face: "montserrat",size:30,color:"#222222"},image: "https://images.genius.com/39c8b2b31afea4a29bc8ea2e611d6492.416x416x1.png", label:"Vald",highlight:{background:"#08FA8E",border:"#08FA8E"},size:60},
+{id: 1,  shape: "image",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/8266616b17e77d94ad068c482c2ccaa7.600x600x1.jpg", label:"XEU",size:45},
+{id: 2,  shape: "image",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/7243b7cf8e8ccaa4148b1259b7e641e1.600x600x1.jpg", label:"Agartha",size:45},
+{id: 3,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/1c76c8caf1c728c587b8836912e9ba5f.526x526x1.jpg", label:"Seezy",size:30},
+{id: 4,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Ovagroundprod",size:30},
+{id: 5,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/481dff0daeb44bf01ec22e50f597e75e.400x400x1.jpg", label:"Ditty Beatz",size:30},
+{id: 6,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/17a0aa1b56fc4912d70eb916565a7fe7.1000x1000x1.png", label:"Sirius",size:30},
+{id: 7,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/17eded3280a6f9982b07a22c04d95bec.625x431x1.jpg", label:"Tchami",size:30},
+{id: 8,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/71aef705bf6f53f2e5505d3c7fa3e3d6.1000x1000x1.jpg", label:"BBP",size:30},
+{id: 9,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/76a67bc26fadef21c312d9aaf34df06e.1000x1000x1.jpg", label:"DJ Weedim",size:30},
+{id: 10,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/ecddf9d0dc9f1dd248a213eb37cce3f3.400x400x1.jpg", label:"Dolor",size:30},
+{id: 11,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Bricks Da Name",size:30},
+{id: 12,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/d5089f4d5a86bc91e420659be20290ee.1000x1000x1.jpg", label:"Chapo",size:30},
+{id: 13,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/aa4e95a03c80da37f93ad27392144275.1000x1000x1.jpg", label:"French Connect",size:30},
+{id: 14,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/653011b75d01e8de55fdb85b39b96f46.719x719x1.jpg", label:"Suikon Blaze AD",size:30},
+{id: 15,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/50d4cf2486283480c26122c81d529dc8.1000x1000x1.jpg", label:"Sofiane",size:30},
+{id: 16,  shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/44c9393bbc627a682bc9e816d5e144af.477x477x1.png", label:"Damso",size:30}
+]);
+  // create an array with edges
+  var edges = new vis.DataSet([
+{from: 0, to: 1, value: 20,arrows: "to", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:""},
+{from: 0, to: 2, value: 20,arrows: "to", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:""},
+{from: 1, to: 3, value: 80,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"16"},
+{from: 1, to: 4, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 1, to: 5, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 1, to: 6, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 1, to: 7, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 2, to: 3, value: 45,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"9"},
+{from: 2, to: 8, value: 10,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"2"},
+{from: 2, to: 9, value: 25,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"5"},
+{from: 2, to: 6, value: 15,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"3"},
+{from: 2, to: 10, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 2, to: 11, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 2, to: 12, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 2, to: 13, value: 5,arrows: "from", color:{color:"#5462CF", highlight:'#5462CF'}, label:"1"},
+{from: 1, to: 6, value: 5,arrows: "from", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:"1"},
+{from: 1, to: 14, value: 5,arrows: "from", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:"1"},
+{from: 1, to: 15, value: 5,arrows: "from", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:"1"},
+{from: 2, to: 14, value: 5,arrows: "from", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:"1"},
+{from: 2, to: 16, value: 5,arrows: "from", color:{color:"#08FA8E", highlight:'#08FA8E'}, label:"1"}
+ ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+        nodes: {
+          borderWidth:2,
+          borderWidthSelected: 8,
+          size:24,
+          color: {
+            border: 'white',
+            background: 'white',
+            highlight: {
+              border: '#08FA8E',
+              background: 'white'
+            },
+            hover: {
+              border: 'orange',
+              background: 'grey'
+            }
+          },
+          font:{color:'#eeeeee'},
+          shapeProperties: {
+            useBorderWithImage:true
+          }
+        }
+      };
+  var network = new vis.Network(container, data, options);
+</script>
+
+
+</body>
+</html>
