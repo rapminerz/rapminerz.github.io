@@ -9,13 +9,15 @@
 
   <style type="text/css">
     body {
-      font: 10pt montserrat;
-      color: #333333;
+      font: 20pt montserrat;
+      color: #08FA8E;
+      background-color:#111111;
+      text-align: center;
     }
     #mynetwork {
-      width: 1500px;
-      height: 800px;
-      border: 1px solid lightgray;
+      width: 100%;
+      height: 500px;
+      border: 0px solid lightgray;
       background-color:#222222;
     }
   </style>
@@ -23,6 +25,9 @@
 <body>
 
 <p>
+  <b><i>RAP MINERZ</i></b>
+<br/>
+  <font size="3" color="white">Reseau des collaboration de Niska sur ses 4 Albums</font>
   
 </p>
 
@@ -31,7 +36,6 @@
 <script type="text/javascript">
   // create an array with nodes
   var nodes = new vis.DataSet([
-{id: 0, shape: "circularImage",  font:{background:"#08FA8E",face: "montserrat",size:30,color:"#222222"},image: "https://images.genius.com/2406d951032a3d39b184f6a2adaff877.393x393x1.png", label:"Niska",highlight:{background:"#08FA8E",border:"#08FA8E"},border:"red",size:60},
 {id: 1, shape: "image",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/9162b08a2a6e8bd12ecf07c75ca684e1.1000x1000x1.png", label:"Commando",size:45},
 {id: 2, shape: "image",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/25004d8dd68e23340bc9bb1765eaa6c0.1000x1000x1.jpg", label:"Zifukoro",size:45},
 {id: 3, shape: "image",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.rapgenius.com/eec9fd021b0dc6ad833b53c45e41486b.960x960x1.jpg", label:"Charo Life",size:45},
@@ -44,31 +48,31 @@
 {id: 10, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/3bf6d1095c65e2ad534143bca8e36e23.260x260x1.jpg", label:"Dany Synthe",size:30},
 {id: 11, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/53ec724f994df879ae98506b17fc3594.563x563x1.jpg", label:"DJ Bellek",size:30},
 {id: 12, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/b8f282f10ffa9e9412412a1d81b538af.615x615x1.jpg", label:"Yasser Beats",size:30},
-{id: 13, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Derek Beats'",size:30},
+{id: 13, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"Derek Beats'",size:30},
 {id: 14, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/3286d6f7ae1ccc12acedd18e6ce2532d.400x400x1.jpg", label:"Jo A Touch",size:30},
 {id: 15, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/2c835c338f3b46df9c69fcbc442eb4f0.1000x1000x1.jpg", label:"Tommy On The Track",size:30},
 {id: 16, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/7deeee9b2c6ba15dcd02d074987b544c.538x538x1.jpg", label:"Kore",size:30},
 {id: 17, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/e25cdde1979b36b5ff23248e67b5cb3e.400x400x1.jpg", label:"John Kercy",size:30},
 {id: 18, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/1c76c8caf1c728c587b8836912e9ba5f.526x526x1.jpg", label:"Seezy",size:30},
 {id: 19, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/5b467f8c270b8563f742c89ec53d3d25.400x400x1.jpg", label:"Izii Tiime",size:30},
-{id: 20, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Sneazy",size:30},
+{id: 20, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"Sneazy",size:30},
 {id: 21, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/b6913b87aa114d32a9958d0dbecd16b1.563x605x1.png", label:"Yoroglyphe",size:30},
-{id: 22, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Heytam",size:30},
+{id: 22, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"Heytam",size:30},
 {id: 23, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/b879a40cccb2ca1efd102b4593b03a3e.512x512x1.jpg", label:"Laioung",size:30},
 {id: 24, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/7a588ece94a0a8eb1471e986cbc8822d.1000x1000x1.jpg", label:"Teddy Krp",size:30},
 {id: 25, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/04b69f97675eaf075ea93b8cd5d709a2.384x384x1.jpg", label:"Alien Beats",size:30},
 {id: 26, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/8d5cef914b037a97b91796c104a039f9.599x599x1.jpg", label:"Therapy",size:30},
 {id: 27, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/8cccd08ab31d6dcdfad612dd9de5a6bb.960x960x1.jpg", label:"Kima prod",size:30},
-{id: 28, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"MORPH",size:30},
-{id: 29, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Gage major",size:30},
+{id: 28, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"MORPH",size:30},
+{id: 29, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"Gage major",size:30},
 {id: 30, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/15c1538ddf6da7d72c8d5ea3477c388b.640x640x1.jpg", label:"Furlax",size:30},
 {id: 31, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/5c1d9c30d13a0493ba65ab1ab058372c.951x951x1.jpg", label:"Ikaz Boi",size:30},
-{id: 32, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"Holo Mobb",size:30},
+{id: 32, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"Holo Mobb",size:30},
 {id: 33, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/3f4c96961763533808043dd5f0181f81.400x400x1.jpg", label:"Boumidjal Double X",size:30},
 {id: 34, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/cd16db286f7126cdd9ea04be2bc17591.960x960x1.jpg", label:"Heizenberg",size:30},
 {id: 35, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/d5089f4d5a86bc91e420659be20290ee.1000x1000x1.jpg", label:"Chapo",size:30},
 {id: 36, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/000cd30357e7ab931357d7275f54885f.424x424x1.png", label:"Denza",size:30},
-{id: 37, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1569598803", label:"La miellerie",size:30},
+{id: 37, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"La miellerie",size:30},
 {id: 38, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/76f6a375d9f3a629fab262a2fad7c915.258x258x1.png", label:"Genius On The Track",size:30},
 {id: 39, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/791bcdb2c147dc708d0193688eb65279.1000x1000x1.jpg", label:"Dopebwoy",size:30},
 {id: 40, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/76ce2aeebf43f69e95f533ba9fcfcc2d.218x218x1.jpg", label:"Sam H",size:30},
@@ -85,7 +89,7 @@
 {id: 51, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/307d795f0bda444b8a5937da71e69cad.1000x1000x1.jpg", label:"Sch",size:30},
 {id: 52, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/919df5cc78fa4115830610d79621e1a8.400x400x1.png", label:"Sidiki Diabate",size:30},
 {id: 53, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/c5f32924d647b6adfadea899be472f75.350x350x1.jpg", label:"Gradur",size:30},
-{id: 54, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://assets.genius.com/images/default_avatar_300.png?1567711868", label:"La B",size:30},
+{id: 54, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "", label:"La B",size:30},
 {id: 55, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/d865e79408fc0a5e9d0dba56253e08d4.1000x1000x1.jpg", label:"Trafiquinte",size:30},
 {id: 56, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/e188768d20546a354efe1e12a405eb16.720x720x1.jpg", label:"Rako (Charo)",size:30},
 {id: 57, shape: "circularImage",  font:{face: "montserrat",size:15,color:"#FFFFFF"},image: "https://images.genius.com/15e4604151b8e2ad8dab9174afeca4f8.640x640x1.jpg", label:"Brigistone",size:30},
@@ -174,14 +178,14 @@
   var options = {
         nodes: {
           borderWidth:2,
-          borderWidthSelected: 8,
+          borderWidthSelected: 5,
           size:24,
           color: {
             border: 'white',
-            background: 'white',
+            background: 'grey',
             highlight: {
               border: '#08FA8E',
-              background: 'white'
+              background: 'black'
             },
             hover: {
               border: 'orange',
@@ -196,7 +200,12 @@
       };
   var network = new vis.Network(container, data, options);
 </script>
-
+<p>
+  <font size="3" color="white">Legende :</font> <font size="3" color="08FA8E">- featuring</font> <font size="3" color="5462CF">- production</font>
+  <br/>
+  <font size="1" color="white">Source : genius.com - Visualisation : Vis.js - @rapminerz</font>
+  
+</p>
 
 </body>
 </html>
