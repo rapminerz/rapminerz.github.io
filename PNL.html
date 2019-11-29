@@ -26,7 +26,19 @@
 <body>
 
 <p>
+  
+  <a href="https://www.instagram.com/rapminerz/">
+  <img src="https://i.imgur.com/Hk9huLA.png" alt="Italian Trulli" width="300" >
+  </a>
+<br/>
   <font size="2" color="white">Graphique interactif des références entre les morceaux de PNL
+ 
+  </font>
+  <br/>
+  <font size="2" color="grey">Exemple : </font><font size="2" color="white">"Sibérie" </font> <font size="2" color="08FA8E">→ contient dans ses lyrics →</font><font size="2" color="white"> "Onizuka"</font>
+  <br/>
+  <font size="1" color="grey">Source : genius.com - Visualisation : Vis.js - @rapminerz</font>
+
 </p>
 
   
@@ -125,18 +137,19 @@
 { id: 1012, color:"#f84c5c",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>dis-moi t’étais où quand j’faisais la guerre </b>" },
 { id: 1013, color:"#f84c5c",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>tout pour les miens</b>" },
 { id: 1014, color:"#f84c5c",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>si tout ça s'résume à raconter ma haine, priez pour qu'un jour, j'change de thème</b>" },
-{ id: 2000, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>ouais</b>" },
-{ id: 2001, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>j'maille, j'maille, </b>" },
-{ id: 2002, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>khey, khey, khey</b>" },
-{ id: 2003, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>hmm, hmm, hmm</b>" },
-{ id: 2004, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>wallah, wallah, wallah</b>" },
-{ id: 2005, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>ounga</b>" },
-{ id: 2006, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>salut, salut</b>" },
-{ id: 2007, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>venga, venga</b>" },
-{ id: 2008, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>bambina, bambina, bambina</b>" },
-{ id: 2009, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>hella, hella, hella</b>" },
-{ id: 2010, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>bah-bah</b>" },
-{ id: 2011, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>eh, eh</b>" }
+{ id: 2000, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>ouais ouais</b>" },
+{ id: 2001, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>hmm hmm</b>" },
+{ id: 2002, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>khey khey</b>" },
+{ id: 2003, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>j'maille j'maille </b>" },
+{ id: 2004, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>wallah wallah</b>" },
+{ id: 2005, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>mira mira</b>" },
+{ id: 2006, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>ounga ounga</b>" },
+{ id: 2007, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>salut salut</b>" },
+{ id: 2008, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>venga venga</b>" },
+{ id: 2009, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>bambina bambina</b>" },
+{ id: 2010, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>hella hella</b>" },
+{ id: 2011, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>eh eh</b>" },
+{ id: 2012, color:"blue",shape:'box', font: { multi: 'html', size: 10, color:'white' }, label: "<b>bah-bah</b>" }
 ]);
   // create an array with edges
   var edges = new vis.DataSet([
@@ -190,57 +203,65 @@
 {from: 37, to: 1013,arrows: "to", color:{color:"#f84c5c", highlight:'#f84c5c'}, label:""},
 {from: 68, to: 1014,arrows: "to", color:{color:"#f84c5c", highlight:'#f84c5c'}, label:""},
 {from: 61, to: 1014,arrows: "to", color:{color:"#f84c5c", highlight:'#f84c5c'}, label:""},
-{from: 33, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 40, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 53, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 30, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 36, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 45, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 59, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 42, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 10, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 42, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 58, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 34, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 70, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 1, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 31, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 17, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 29, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 20, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 34, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 38, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 37, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 4, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 54, to: 2000,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 3, to: 2001,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 4, to: 2001,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 36, to: 2001,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 37, to: 2001,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 27, to: 2002,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 7, to: 2002,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 4, to: 2002,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 36, to: 2002,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 37, to: 2003,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 4, to: 2003,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 36, to: 2003,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 53, to: 2004,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 4, to: 2004,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 5, to: 2004,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 8, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 30, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 36, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 27, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 59, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 42, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 31, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 29, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 21, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 26, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 50, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 12, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 33, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 9, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 36, to: 2007,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 11, to: 2007,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 13, to: 2008,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 69, to: 2008,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 30, to: 2009,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 16, to: 2009,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 20, to: 2010,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 43, to: 2010,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 9, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 5, to: 2005,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 8, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 27, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 59, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 42, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 31, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 29, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 21, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 26, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 50, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 12, to: 2006,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 33, to: 2007,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 9, to: 2007,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 36, to: 2008,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 11, to: 2008,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 13, to: 2009,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 69, to: 2009,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 30, to: 2010,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 16, to: 2010,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 28, to: 2010,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
 {from: 40, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
-{from: 37, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""}
+{from: 58, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 17, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 47, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 71, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 37, to: 2011,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 20, to: 2012,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""},
+{from: 43, to: 2012,arrows: "to", color:{color:"blue", highlight:'blue'}, label:""}
  ]);
 
   // create a network
