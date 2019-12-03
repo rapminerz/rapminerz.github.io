@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <title>Rap Minerz - PNL</title>
+
+  <script type="text/javascript" src="./dist/vis.js"></script>
+  <link href="./dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+ <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+  <style type="text/css">
+    body {
+      font: 10pt Montserrat;
+      color: #EEEEEE;
+      background-color:#0c1524;
+      text-align: left;
+    }
+    #mynetwork {
+      width: 100%;
+      height: 550px;
+      border: 0px solid lightgray;
+      background-color:#080e19;
+    }
+  </style>
+</head>
+<body>
+  <p>
+<font size="5" color="#f13140">RAP MINERZ x INTERLUDE</font>
+<br/>
+DATADROP #3 : L'AUTO-RÉFÉRENCEMENT DE PNL
+<br/>
+<br/>
+RÉSEAUX INTERACTIF
+<ul>
+   <li>
+<a href="PNL-1.html"><font size="2" color="#3e6fbc">PARTIE 1 :</a> </font><font size="2" color="#f13140">AUTO-RÉFÉRENCEMENT DES TITRES DE MORCEAUX</font>
+<br/>
+<font size="2" color="#f13140">Légende : Les flèches pointent vers les sons dont le titre est référencé</font>
+<br/>
+<br/>
+ </li>
+    <li>
+<a href="PNL-2.html"><font size="2" color="#3e6fbc">PARTIE 2 :</a> </font> RÉPÉTITIONS DE GIMMICKS
+   </li>
+     <li>
+<a href="PNL-3.html"><font size="2" color="#3e6fbc">PARTIE 3 :</a> </font>RÉPÉTITIONS DE PHRASES
+   </li>
+     </ul>
+     <font size="2" color="#3e6fbc">source : genius.com - autres analyses et visualisations sur instagram et facebook <a href="https://www.instagram.com/rapminerz/"><font size="2" color="#f13140">@rapminerz</font></a></font>
+
+  
+
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+{id: 0, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"DA\n(Dans la legende)",size:35},
+{id: 1, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Naha\n(Dans la legende)",size:35},
+{id: 2, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Dans la legende\n(Dans la legende)",size:35},
+{id: 3, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Mira\n(Dans la legende)",size:35},
+{id: 4, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"J'suis QLF\n(Dans la legende)",size:35},
+{id: 6, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Kratos\n(Dans la legende)",size:35},
+{id: 7, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Luz de Luna\n(Dans la legende)",size:35},
+{id: 8, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Tu sais pas\n(Dans la legende)",size:35},
+{id: 10, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Humain\n(Dans la legende)",size:35},
+{id: 11, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Bambina\n(Dans la legende)",size:35},
+{id: 12, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Bene\n(Dans la legende)",size:35},
+{id: 14, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Onizuka\n(Dans la legende)",size:35},
+{id: 15, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Jusqu'au dernier gramme\n(Dans la legende)",size:35},
+{id: 16, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/02fb15cbdc1ec3d31bb44815edd94743.600x600x1.jpg", label:"Crames (Version Rose)\n(Dans la legende)",size:35},
+{id: 17, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"Je vis, je visser\n(Que La Famille)",size:35},
+{id: 18, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"Lala\n(Que La Famille)",size:35},
+{id: 22, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"PNL\n(Que La Famille)",size:35},
+{id: 24, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"Gala gala\n(Que La Famille)",size:35},
+{id: 26, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"Athena\n(Que La Famille)",size:35},
+{id: 27, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"Recherche du bonheur\n(Que La Famille)",size:35},
+{id: 28, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/b07ee01ac76ca1ff67a26ca052ac40b7.800x800x1.jpg", label:"Simba\n(Que La Famille)",size:35},
+{id: 29, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Le monde ou rien\n(Le Monde Chico)",size:35},
+{id: 32, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"J'vends\n(Le Monde Chico)",size:35},
+{id: 33, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Abonne\n(Le Monde Chico)",size:35},
+{id: 34, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"J'suis PNL\n(Le Monde Chico)",size:35},
+{id: 35, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Mexico\n(Le Monde Chico)",size:35},
+{id: 36, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Porte de Mesrine\n(Le Monde Chico)",size:35},
+{id: 37, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Dans ta rue\n(Le Monde Chico)",size:35},
+{id: 38, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Laisse\n(Le Monde Chico)",size:35},
+{id: 40, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Le M\n(Le Monde Chico)",size:35},
+{id: 41, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Rebenga\n(Le Monde Chico)",size:35},
+{id: 42, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Plus Tony que Sosa\n(Le Monde Chico)",size:35},
+{id: 44, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Tempete\n(Le Monde Chico)",size:35},
+{id: 45, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.rapgenius.com/75a15d3c5c58af0f4756c2dffe50c56f.960x960x1.jpg", label:"Dans la soucoupe\n(Le Monde Chico)",size:35},
+{id: 48, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Chang\n(Deux freres)",size:35},
+{id: 49, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Blanka\n(Deux freres)",size:35},
+{id: 50, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"91's\n(Deux freres)",size:35},
+{id: 53, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Deux freres\n(Deux freres)",size:35},
+{id: 54, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Hasta la vista\n(Deux freres)",size:35},
+{id: 55, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Coeurs\n(Deux freres)",size:35},
+{id: 56, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Shenmue\n(Deux freres)",size:35},
+{id: 57, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Kuta Ubud\n(Deux freres)",size:35},
+{id: 58, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Menace\n(Deux freres)",size:35},
+{id: 63, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Capuche (Version Blanche)\n(Deux freres)",size:35},
+{id: 66, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Siberie\n(Deux freres)",size:35},
+{id: 67, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://images.genius.com/b0b46a7a8d7ae3d1a3f455681f73b32a.960x960x1.jpg", label:"Bang\n(Deux freres)",size:35},
+{id: 68, shape: "circularImage",  font:{face: "montserrat",size:10,color:"white"},image: "https://t2.genius.com/unsafe/440x440/https%3A%2F%2Fimages.genius.com%2F56bae59ab3227ff787a93c1f5736f125.640x640x1.jpg", label:"Mowgli\n(Mowgli)",size:35}
+]);
+  // create an array with edges
+  var edges = new vis.DataSet([
+{from: 1, to: 18,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 1, to: 38,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 2, to: 53,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 3, to: 7,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 8, to: 7,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 10, to: 55,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 11, to: 67,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 14, to: 66,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 4,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 11,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 12,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 18,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 27,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 28,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 36,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 38,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 41,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 54,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 56,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 22, to: 63,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 24, to: 26,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 24, to: 68,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 28, to: 0,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 28, to: 10,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 28, to: 45,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 29, to: 16,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 29, to: 50,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 32, to: 41,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 33, to: 0,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 33, to: 15,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 33, to: 17,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 33, to: 37,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 33, to: 40,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 35, to: 6,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 35, to: 18,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 35, to: 34,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 40, to: 2,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 40, to: 6,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 40, to: 28,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 40, to: 36,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 40, to: 44,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 40, to: 53,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 42, to: 32,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 44, to: 32,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 44, to: 63,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 49, to: 48,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 55, to: 36,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 55, to: 40,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 55, to: 66,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 67, to: 18,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 67, to: 49,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 67, to: 58,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 0,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 3,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 17,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 18,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 35,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 40,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 41,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 42,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""},
+{from: 68, to: 57,arrows: "from", color:{color:"#f13140", highlight:'#f13140'}, label:""}
+ ]);
+
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+        nodes: {
+          borderWidth:2,
+          borderWidthSelected: 5,
+          size:24,
+          color: {
+            border: 'white',
+            background: 'grey',
+            highlight: {
+              border: '#f13140',
+              background: 'black'
+            },
+            hover: {
+              border: 'orange',
+              background: 'grey'
+            }
+          },
+          font:{color:'#eeeeee'},
+          shapeProperties: {
+            useBorderWithImage:true
+          }
+        }
+      };
+  var network = new vis.Network(container, data, options);
+</script>
+
+
+</body>
+</html>
