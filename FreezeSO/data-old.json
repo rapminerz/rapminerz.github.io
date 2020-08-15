@@ -1,0 +1,35 @@
+{
+	"children" : [
+		{
+			"colorCode" : "Exploration Actions",
+			"children" : [
+				{
+					"colorCode" : "Exploration Actions",
+					"children" : [
+						{
+							"colorCode" : "Exploration Actions",
+							"name" : [
+								"Query",
+								"Query",
+								"Query"
+							],
+							"key" : "Query-Query-Query",
+							"size" : 19
+						}
+					],
+					"name" : [
+						"Query",
+						"Query"
+					],
+					"key" : "Query-Query",
+					"size" : 30
+				}
+			],
+			"name" : [
+				"Query"
+			],
+			"key" : "Query",
+			"size" : 55
+        }],
+        "name" : "rapminerz/freeze",
+        "size" : 198}
