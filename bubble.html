@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://0.0.0.0:8885/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        p,
+        text {
+            font-size: 0.85em;
+        }
+
+        svg {
+            background: #333333
+        }
+
+        body {
+            background-color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button id="collide">Collide</button>
+    <div id="chart">
+        <svg height="1000" width="1000" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g transform="translate(500,500)">
+                <defs>
+                    <pattern class="artist-pattern" id="Rowjay" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/dc28c1fce22f3f709802ea08231f763c.900x900x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Di-Meh" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/f13d9cbc66f3615b73b22532de7317d7.600x600x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Hamza" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/4e999f4c4332ed7339dcd3c6a909a0bb.521x521x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="8ruki" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/58779b48a0cecaf8647bb168af3c9089.473x473x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="La_Fouine" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/85a9f2fff1af7fbc1991bc37a2b1dfc5.344x344x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Obia_le_Chef" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/3bce8f70e31ea060d9e567d0874b02c3.800x800x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Krisy" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/6400f38376f2ec97d5257f6bdf210682.532x532x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Youv_Dee" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/1bb69d02b029f3ffb74a6a996458e860.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Caballero_&amp;_JeanJass" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/162dab2faa69d8a7035ac0892b6c570a.477x477x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Mehdi_Maïzi" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/6b4f5bcfd5362350fb0b0429e7e9b38e.410x410x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Ateyaba" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/4a785940756d9adab4096659c255afdc.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Mister_V" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/d199affb8a06541f80ee7572911b8ee1.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Shreez" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/87bebf287fdd84f41d03ddc6f06c80be.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Slimka" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/316d46c50a37a9845f14ff9ddad132e3.954x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="DoomX" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/ede66947b0dae3f44bdc09ac3c2d495d.929x929x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Luni" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/601df9b51e1056f9c691b5d8d980dfb2.456x456x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Da-P_DabeatX" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/bc18cb30f4f598f6f3613806f38fb578.960x960x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Dinos" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/591d089a09ca3b4906bba6ae6bfabf9c.682x682x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Jeune_Loup" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/dd7efb879fc43dad56557524d453359b.640x640x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Quadracup" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/09f817fe3d378edac2cb04b64648f9e9.402x402x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Criss_SWK" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none" xlink:href=""></image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="WondaGurl" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://s3.amazonaws.com/rapgenius/WondaGurl.jpg"></image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Tortoz" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/128a1c10fc2aff4445ba22d448562eea.456x456x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Les_Anticipateurs" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/1c3fe1cf977ae3ddb2be914148a931ed.480x480x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Alpha_Wann" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/9eceb53405edce9e22267af62f7b2548.427x427x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="S.Pri_Noir" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/452fb5bb6afafde9816034c109741a0d.410x410x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="JeanJass" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/e8679dd69f60ea6083bdc8770779d37a.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="HIM$_(FRA)" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/9e03a0eb62df1939e540ea382583186f.960x960x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Green_Montana" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/b1a4449b1281a51c22da5e1f679c851c.475x475x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Ikaz_Boi" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/e02b2a50e5e95ea48d8c96014a26aa9f.640x640x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Planet_Giza" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/8ae16b8f6e4b90125c61040f0950ce08.879x879x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Don_Toliver" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/f9f5c86c00c40ab870501848b326419c.900x900x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Jay_Critch" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/f11f762e9399c0cb47126826f3efa4cb.793x793x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Green_Hypnotic" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/be142f3b6c72460d2ef3c2e9b1a24e1a.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Famous_Dex" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/105a8eac103cc8c7ea65e82414b5dc3d.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Izzy-S" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/d0a77d77dca244eba7127ddcc4ea9429.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="WhyG" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/4ae492c21f330e296b665d09beba1061.613x613x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Zeina" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/9837a5cc0330339a9118c7da0228fd40.1000x1000x1.png">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Manast_LL’" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/655f8722a32b4f9953708acfbbb00dd6.426x426x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Karyke" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/cbc42993eed8f2befe21252c23542524.500x500x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="JT_Soul" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/dcf29cfe02933e312bd95930fb2f0e31.1000x1000x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="WoahKespasse" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/6b18f2b5b54e3120cc4d4db89a4bfc0d.631x631x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Crvdz" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/6b606bdc1822612e5f5d4f4f9a0764a1.500x500x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="KILLY" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/839fa9203dbe045665f2faa7d6c6247c.640x640x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Steve_Beezy" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/b82148d067fd2c9b5f294215e3afc6dd.960x960x1.jpg">
+                        </image>
+                    </pattern>
+                    <pattern class="artist-pattern" id="Adamn_Killa" height="100%" width="100%"
+                        patternContentUnits="objectBoundingBox">
+                        <image height="1" width="1" preserveAspectRatio="none"
+                            xlink:href="https://images.genius.com/cabd38aa9f614a18ae2d81917a1fa0be.640x640x1.jpg">
+                        </image>
+                    </pattern>
+                    <filter x="0" y="0" width="1" height="1" id="solid">
+                        <feflood flood-color="#fbecf0"></feflood>
+                        <fegaussianblur stdDeviation="2"></fegaussianblur>
+                        <fecomponenttransfer>
+                            <fefunca type="table" tableValues="0 0 0 1"></fefunca>
+                        </fecomponenttransfer>
+                        <fecomponenttransfer>
+                            <fefunca type="table" tableValues="0 1 1 1 1 1 1 1"></fefunca>
+                        </fecomponenttransfer>
+                        <fecomposite in="SourceGraphic" operator="over"></fecomposite>
+                    </filter>
+                    <filter x="0" y="0" width="1" height="1" id="solid2">
+                        <feflood flood-color="#5462cf"></feflood>
+                        <fegaussianblur stdDeviation="2"></fegaussianblur>
+                        <fecomponenttransfer>
+                            <fefunca type="table" tableValues="0 0 0 1"></fefunca>
+                        </fecomponenttransfer>
+                        <fecomponenttransfer>
+                            <fefunca type="table" tableValues="0 1 1 1 1 1 1 1"></fefunca>
+                        </fecomponenttransfer>
+                        <fecomposite in="SourceGraphic" operator="over"></fecomposite>
+                    </filter>
+                    <filter x="0" y="0" width="1" height="1" id="solid3">
+                        <feflood flood-color="#1e365c"></feflood>
+                        <fegaussianblur stdDeviation="2"></fegaussianblur>
+                        <fecomponenttransfer>
+                            <fefunca type="table" tableValues="0 0 0 1"></fefunca>
+                        </fecomponenttransfer>
+                        <fecomponenttransfer>
+                            <fefunca type="table" tableValues="0 1 1 1 1 1 1 1"></fefunca>
+                        </fecomponenttransfer>
+                        <fecomposite in="SourceGraphic" operator="over"></fecomposite>
+                    </filter>
+                </defs>
+                <circle class="border" fill="#fbecf0" r="59.2064418414776" cx="56.3306303757245" cy="26.84391271491141">
+                </circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="-110.05669706636928"
+                    cy="89.7566762183511"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="-30.172238965703542"
+                    cy="-138.37226746269954"></circle>
+                <circle class="border" fill="#fbecf0" r="38.732299895080004" cx="80.98763523494257"
+                    cy="143.36607819931905"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-56.003599550322186" cy="-38.97182585077774"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="81.78847183357514"
+                    cy="-60.59724521982692"></circle>
+                <circle class="border" fill="#fbecf0" r="33.23347732080674" cx="-39.25464635869078"
+                    cy="75.71090237386244"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="-67.74622715357172"
+                    cy="-92.2207995723808"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="146.42726457444718"
+                    cy="41.426293716385544"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-152.85920578267397" cy="55.5210908779112"></circle>
+                <circle class="border" fill="#fbecf0" r="43.3680217633304" cx="6.6648689816968085"
+                    cy="-71.84901096096687"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="14.174723792085517"
+                    cy="169.02618932884593"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-104.55869947116445" cy="-51.16747577553188"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="127.87559225259174" cy="-90.23934176167482"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-79.57323560956046" cy="135.042967573784"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-56.841379263236085" cy="-186.09902811009462"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="117.5010556616541" cy="87.78963308082169"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-148.68065415278002" cy="-25.619322786788008"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="65.17403600796817" cy="-112.52430994584628"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-29.7153162504775" cy="136.36468620162412"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-119.82183762951884" cy="-109.32288002347305"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="192.7061610140476" cy="12.22766869125345"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-162.88530449792466" cy="104.34324347272388"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="24.155440708667275" cy="-140.8852474930316"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="55.292720005209894" cy="205.06246431780792"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-155.84483068698555" cy="-74.65177146019029"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="180.13568599374747" cy="-79.12697852155709"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-99.07806277329315" cy="181.06894600450948"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-84.31866452717212" cy="-144.4643772762995"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="175.13416972554387" cy="88.01494491226742"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-179.70684226547462" cy="13.438528131730251"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="110.83065414086286"
+                    cy="-142.60928144782045"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-12.876131322323506" cy="216.68531045728056"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-168.01519384321404" cy="-123.10624677042743"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="205.67280813322967" cy="-36.12484980263318"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-129.06230332202654" cy="141.09876241196162"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="-0.3554398039510395"
+                    cy="-189.96996920157358"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="146.17493300624116" cy="128.77475491234378"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-196.92951907744788" cy="-38.08931747460446"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="163.02698930148904" cy="-125.95298525440724"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-49.157038337968416" cy="182.2804369107212"></circle>
+                <circle class="border" fill="#fbecf0" r="21" cx="-132.36435070944117" cy="-158.16359031313442"></circle>
+                <circle class="border" fill="#fbecf0" r="36.121409569719134" cx="141.87074019066108"
+                    cy="-27.359641759180885"></circle>
+                <circle class="border" fill="#fbecf0" r="41.13326133959663" cx="-95.0430935484765"
+                    cy="17.58463156209502"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="63.637610816544814"
+                    cy="-178.96195711254916"></circle>
+                <circle class="border" fill="#fbecf0" r="26.067272221261828" cx="17.949535082292144"
+                    cy="109.45786735879524"></circle>
+                <circle r="56.3870874680739" fill="url(#Rowjay)" cx="56.3306303757245" cy="26.84391271491141"></circle>
+                <circle r="24.825973544058883" fill="url(#Di-Meh)" cx="-110.05669706636928" cy="89.7566762183511">
+                </circle>
+                <circle r="24.825973544058883" fill="url(#Hamza)" cx="-30.172238965703542" cy="-138.37226746269954">
+                </circle>
+                <circle r="36.887904661980954" fill="url(#8ruki)" cx="80.98763523494257" cy="143.36607819931905">
+                </circle>
+                <circle r="20" fill="url(#La_Fouine)" cx="-56.003599550322186" cy="-38.97182585077774"></circle>
+                <circle r="24.825973544058883" fill="url(#Obia_le_Chef)" cx="81.78847183357514" cy="-60.59724521982692">
+                </circle>
+                <circle r="31.650930781720707" fill="url(#Krisy)" cx="-39.25464635869078" cy="75.71090237386244">
+                </circle>
+                <circle r="24.825973544058883" fill="url(#Youv_Dee)" cx="-67.74622715357172" cy="-92.2207995723808">
+                </circle>
+                <circle r="24.825973544058883" fill="url(#Caballero_&amp;_JeanJass)" cx="146.42726457444718"
+                    cy="41.426293716385544"></circle>
+                <circle r="20" fill="url(#Mehdi_Maïzi)" cx="-152.85920578267397" cy="55.5210908779112"></circle>
+                <circle r="41.30287786983847" fill="url(#Ateyaba)" cx="6.6648689816968085" cy="-71.84901096096687">
+                </circle>
+                <circle r="24.825973544058883" fill="url(#Mister_V)" cx="14.174723792085517" cy="169.02618932884593">
+                </circle>
+                <circle r="20" fill="url(#Shreez)" cx="-104.55869947116445" cy="-51.16747577553188"></circle>
+                <circle r="20" fill="url(#Slimka)" cx="127.87559225259174" cy="-90.23934176167482"></circle>
+                <circle r="20" fill="url(#DoomX)" cx="-79.57323560956046" cy="135.042967573784"></circle>
+                <circle r="20" fill="url(#Luni)" cx="-56.841379263236085" cy="-186.09902811009462"></circle>
+                <circle r="20" fill="url(#Da-P_DabeatX)" cx="117.5010556616541" cy="87.78963308082169"></circle>
+                <circle r="20" fill="url(#Dinos)" cx="-148.68065415278002" cy="-25.619322786788008"></circle>
+                <circle r="20" fill="url(#Jeune_Loup)" cx="65.17403600796817" cy="-112.52430994584628"></circle>
+                <circle r="20" fill="url(#Quadracup)" cx="-29.7153162504775" cy="136.36468620162412"></circle>
+                <circle r="20" fill="url(#Criss_SWK)" cx="-119.82183762951884" cy="-109.32288002347305"></circle>
+                <circle r="20" fill="url(#WondaGurl)" cx="192.7061610140476" cy="12.22766869125345"></circle>
+                <circle r="20" fill="url(#Tortoz)" cx="-162.88530449792466" cy="104.34324347272388"></circle>
+                <circle r="20" fill="url(#Les_Anticipateurs)" cx="24.155440708667275" cy="-140.8852474930316"></circle>
+                <circle r="20" fill="url(#Alpha_Wann)" cx="55.292720005209894" cy="205.06246431780792"></circle>
+                <circle r="20" fill="url(#S.Pri_Noir)" cx="-155.84483068698555" cy="-74.65177146019029"></circle>
+                <circle r="20" fill="url(#JeanJass)" cx="180.13568599374747" cy="-79.12697852155709"></circle>
+                <circle r="20" fill="url(#HIM$_(FRA))" cx="-99.07806277329315" cy="181.06894600450948"></circle>
+                <circle r="20" fill="url(#Green_Montana)" cx="-84.31866452717212" cy="-144.4643772762995"></circle>
+                <circle r="20" fill="url(#Ikaz_Boi)" cx="175.13416972554387" cy="88.01494491226742"></circle>
+                <circle r="20" fill="url(#Planet_Giza)" cx="-179.70684226547462" cy="13.438528131730251"></circle>
+                <circle r="24.825973544058883" fill="url(#Don_Toliver)" cx="110.83065414086286"
+                    cy="-142.60928144782045"></circle>
+                <circle r="20" fill="url(#Jay_Critch)" cx="-12.876131322323506" cy="216.68531045728056"></circle>
+                <circle r="20" fill="url(#Green_Hypnotic)" cx="-168.01519384321404" cy="-123.10624677042743"></circle>
+                <circle r="20" fill="url(#Famous_Dex)" cx="205.67280813322967" cy="-36.12484980263318"></circle>
+                <circle r="20" fill="url(#Izzy-S)" cx="-129.06230332202654" cy="141.09876241196162"></circle>
+                <circle r="24.825973544058883" fill="url(#WhyG)" cx="-0.3554398039510395" cy="-189.96996920157358">
+                </circle>
+                <circle r="20" fill="url(#Zeina)" cx="146.17493300624116" cy="128.77475491234378"></circle>
+                <circle r="20" fill="url(#Manast_LL’)" cx="-196.92951907744788" cy="-38.08931747460446"></circle>
+                <circle r="20" fill="url(#Karyke)" cx="163.02698930148904" cy="-125.95298525440724"></circle>
+                <circle r="20" fill="url(#JT_Soul)" cx="-49.157038337968416" cy="182.2804369107212"></circle>
+                <circle r="20" fill="url(#WoahKespasse)" cx="-132.36435070944117" cy="-158.16359031313442"></circle>
+                <circle r="34.40134244735155" fill="url(#Crvdz)" cx="141.87074019066108" cy="-27.359641759180885">
+                </circle>
+                <circle r="39.17453460913965" fill="url(#KILLY)" cx="-95.0430935484765" cy="17.58463156209502"></circle>
+                <circle r="24.825973544058883" fill="url(#Steve_Beezy)" cx="63.637610816544814"
+                    cy="-178.96195711254916"></circle>
+                <circle r="24.825973544058883" fill="url(#Adamn_Killa)" cx="17.949535082292144" cy="109.45786735879524">
+                </circle><text filter="url(#solid2)" x="56.3306303757245" y="60.67616519575575"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 18.7957px;">&nbsp;17&nbsp;</text><text
+                    filter="url(#solid2)" x="-110.05669706636928" y="104.65226034478643"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="-30.172238965703542" y="-123.47668333626422"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="80.98763523494257" y="165.49882099650762"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 12.296px;">&nbsp;6&nbsp;</text><text
+                    filter="url(#solid2)" x="-56.003599550322186" y="-26.97182585077774"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="81.78847183357514" y="-45.701661093391586"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="-39.25464635869078" y="94.70146084289486"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 10.5503px;">&nbsp;4&nbsp;</text><text
+                    filter="url(#solid2)" x="-67.74622715357172" y="-77.32521544594547"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="146.42726457444718" y="56.321877842820875"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="-152.85920578267397" y="67.5210908779112"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="6.6648689816968085" y="-47.06728423906378"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 13.7676px;">&nbsp;8&nbsp;</text><text
+                    filter="url(#solid2)" x="14.174723792085517" y="183.92177345528125"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="-104.55869947116445" y="-39.16747577553188"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="127.87559225259174" y="-78.23934176167482"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-79.57323560956046" y="147.042967573784"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-56.841379263236085" y="-174.09902811009462"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="117.5010556616541" y="99.78963308082169"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-148.68065415278002" y="-13.619322786788008"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="65.17403600796817" y="-100.52430994584628"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-29.7153162504775" y="148.36468620162412"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-119.82183762951884" y="-97.32288002347305"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="192.7061610140476" y="24.22766869125345"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-162.88530449792466" y="116.34324347272388"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="24.155440708667275" y="-128.8852474930316"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="55.292720005209894" y="217.06246431780792"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-155.84483068698555" y="-62.65177146019029"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="180.13568599374747" y="-67.12697852155709"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-99.07806277329315" y="193.06894600450948"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-84.31866452717212" y="-132.4643772762995"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="175.13416972554387" y="100.01494491226742"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-179.70684226547462" y="25.43852813173025"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="110.83065414086286" y="-127.71369732138513"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="-12.876131322323506" y="228.68531045728056"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-168.01519384321404" y="-111.10624677042743"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="205.67280813322967" y="-24.12484980263318"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-129.06230332202654" y="153.09876241196162"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-0.3554398039510395" y="-175.07438507513825"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="146.17493300624116" y="140.77475491234378"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-196.92951907744788" y="-26.089317474604456"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="163.02698930148904" y="-113.95298525440724"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-49.157038337968416" y="194.2804369107212"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="-132.36435070944117" y="-146.16359031313442"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;1&nbsp;</text><text
+                    filter="url(#solid2)" x="141.87074019066108" y="-6.7188362907699535"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 11.4671px;">&nbsp;5&nbsp;</text><text
+                    filter="url(#solid2)" x="-95.0430935484765" y="41.08935232757881"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 13.0582px;">&nbsp;7&nbsp;</text><text
+                    filter="url(#solid2)" x="63.637610816544814" y="-164.06637298611383"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid2)" x="17.949535082292144" y="124.35345148523056"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(251, 236, 240); font-size: 0px;">&nbsp;2&nbsp;</text><text
+                    filter="url(#solid)" x="56.3306303757245" y="83.23100018298531"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(30, 54, 92); font-size: 18.7957px;">&nbsp;ROWJAY&nbsp;</text><text
+                    filter="url(#solid3)" x="-110.05669706636928" y="114.58264976240999"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;DI-MEH&nbsp;(2)</text><text
+                    filter="url(#solid3)" x="-30.172238965703542" y="-113.54629391864066"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;HAMZA&nbsp;(2)</text><text
+                    filter="url(#solid)" x="80.98763523494257" y="180.25398286130002"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(30, 54, 92); font-size: 12.296px;">&nbsp;8RUKI&nbsp;</text><text
+                    filter="url(#solid3)" x="-56.003599550322186" y="-18.97182585077774"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;LA
+                    FOUINE&nbsp;(1)</text><text filter="url(#solid3)" x="81.78847183357514" y="-35.771271675768034"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;OBIA
+                    LE CHEF&nbsp;(2)</text><text filter="url(#solid)" x="-39.25464635869078" y="107.36183315558314"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(30, 54, 92); font-size: 10.5503px;">&nbsp;KRISY&nbsp;</text><text
+                    filter="url(#solid3)" x="-67.74622715357172" y="-67.39482602832192"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;YOUV
+                    DEE&nbsp;(2)</text><text filter="url(#solid3)" x="146.42726457444718" y="66.25226726044443"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;CABALLERO
+                    &amp; JEANJASS&nbsp;(2)</text><text filter="url(#solid3)" x="-152.85920578267397"
+                    y="75.5210908779112"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;MEHDI
+                    MAÏZI&nbsp;(1)</text><text filter="url(#solid)" x="6.6648689816968085" y="-30.546133091128397"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(30, 54, 92); font-size: 13.7676px;">&nbsp;ATEYABA&nbsp;</text><text
+                    filter="url(#solid3)" x="14.174723792085517" y="193.8521628729048"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;MISTER
+                    V&nbsp;(2)</text><text filter="url(#solid3)" x="-104.55869947116445" y="-31.167475775531877"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;SHREEZ&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="127.87559225259174" y="-70.23934176167482"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;SLIMKA&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-79.57323560956046" y="155.042967573784"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;DOOMX&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-56.841379263236085" y="-166.09902811009462"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;LUNI&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="117.5010556616541" y="107.78963308082169"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;DA-P
+                    DABEATX&nbsp;(1)</text><text filter="url(#solid3)" x="-148.68065415278002" y="-5.619322786788008"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;DINOS&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="65.17403600796817" y="-92.52430994584628"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;JEUNE
+                    LOUP&nbsp;(1)</text><text filter="url(#solid3)" x="-29.7153162504775" y="156.36468620162412"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;QUADRACUP&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-119.82183762951884" y="-89.32288002347305"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;CRISS
+                    SWK&nbsp;(1)</text><text filter="url(#solid3)" x="192.7061610140476" y="32.22766869125345"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;WONDAGURL&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-162.88530449792466" y="124.34324347272388"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;TORTOZ&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="24.155440708667275" y="-120.88524749303161"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;LES
+                    ANTICIPATEURS&nbsp;(1)</text><text filter="url(#solid3)" x="55.292720005209894"
+                    y="225.06246431780792"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;ALPHA
+                    WANN&nbsp;(1)</text><text filter="url(#solid3)" x="-155.84483068698555" y="-54.65177146019029"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;S.PRI
+                    NOIR&nbsp;(1)</text><text filter="url(#solid3)" x="180.13568599374747" y="-59.12697852155709"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;JEANJASS&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-99.07806277329315" y="201.06894600450948"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;HIM$
+                    (FRA)&nbsp;(1)</text><text filter="url(#solid3)" x="-84.31866452717212" y="-124.4643772762995"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;GREEN
+                    MONTANA&nbsp;(1)</text><text filter="url(#solid3)" x="175.13416972554387" y="108.01494491226742"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;IKAZ
+                    BOI&nbsp;(1)</text><text filter="url(#solid3)" x="-179.70684226547462" y="33.43852813173025"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;PLANET
+                    GIZA&nbsp;(1)</text><text filter="url(#solid3)" x="110.83065414086286" y="-117.78330790376157"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;DON
+                    TOLIVER&nbsp;(2)</text><text filter="url(#solid3)" x="-12.876131322323506" y="236.68531045728056"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;JAY
+                    CRITCH&nbsp;(1)</text><text filter="url(#solid3)" x="-168.01519384321404" y="-103.10624677042743"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;GREEN
+                    HYPNOTIC&nbsp;(1)</text><text filter="url(#solid3)" x="205.67280813322967" y="-16.12484980263318"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;FAMOUS
+                    DEX&nbsp;(1)</text><text filter="url(#solid3)" x="-129.06230332202654" y="161.09876241196162"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;IZZY-S&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-0.3554398039510395" y="-165.1439956575147"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;WHYG&nbsp;(2)</text><text
+                    filter="url(#solid3)" x="146.17493300624116" y="148.77475491234378"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;ZEINA&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-196.92951907744788" y="-18.089317474604456"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;MANAST
+                    LL’&nbsp;(1)</text><text filter="url(#solid3)" x="163.02698930148904" y="-105.95298525440724"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;KARYKE&nbsp;(1)</text><text
+                    filter="url(#solid3)" x="-49.157038337968416" y="202.2804369107212"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;JT
+                    SOUL&nbsp;(1)</text><text filter="url(#solid3)" x="-132.36435070944117" y="-138.16359031313442"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;WOAHKESPASSE&nbsp;(1)</text><text
+                    filter="url(#solid)" x="141.87074019066108" y="7.041700688170668"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(30, 54, 92); font-size: 11.4671px;">&nbsp;CRVDZ&nbsp;</text><text
+                    filter="url(#solid)" x="-95.0430935484765" y="56.75916617123467"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: bolder; fill: rgb(30, 54, 92); font-size: 13.0582px;">&nbsp;KILLY&nbsp;</text><text
+                    filter="url(#solid3)" x="63.637610816544814" y="-154.13598356849027"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;STEVE
+                    BEEZY&nbsp;(2)</text><text filter="url(#solid3)" x="17.949535082292144" y="134.28384090285414"
+                    style="text-anchor: middle; font-family: Montserrat; font-weight: lighter; fill: rgb(251, 236, 240); font-size: 8.27532px;">&nbsp;ADAMN
+                    KILLA&nbsp;(2)</text><text x="56.3306303757245" y="111.42454391702226"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;ROWJAY&nbsp;</text><text
+                    x="-110.05669706636928" y="126.99563653443943"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;DI-MEH&nbsp;</text><text
+                    x="-30.172238965703542" y="-101.13330714661122"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;HAMZA&nbsp;</text><text
+                    x="80.98763523494257" y="198.6979351922905"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;8RUKI&nbsp;</text><text
+                    x="-56.003599550322186" y="-8.97182585077774"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;LA
+                    FOUINE&nbsp;</text><text x="81.78847183357514" y="-23.358284903738593"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;OBIA
+                    LE CHEF&nbsp;</text><text x="-39.25464635869078" y="123.1872985464435"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;KRISY&nbsp;</text><text
+                    x="-67.74622715357172" y="-54.981839256292474"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;YOUV
+                    DEE&nbsp;</text><text x="146.42726457444718" y="78.66525403247387"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;CABALLERO
+                    &amp; JEANJASS&nbsp;</text><text x="-152.85920578267397" y="85.5210908779112"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;MEHDI
+                    MAÏZI&nbsp;</text><text x="6.6648689816968085" y="-9.894694156209162"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;ATEYABA&nbsp;</text><text
+                    x="14.174723792085517" y="206.26514964493424"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;MISTER
+                    V&nbsp;</text><text x="-104.55869947116445" y="-21.167475775531877"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;SHREEZ&nbsp;</text><text
+                    x="127.87559225259174" y="-60.23934176167482"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;SLIMKA&nbsp;</text><text
+                    x="-79.57323560956046" y="165.042967573784"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;DOOMX&nbsp;</text><text
+                    x="-56.841379263236085" y="-156.09902811009462"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;LUNI&nbsp;</text><text
+                    x="117.5010556616541" y="117.78963308082169"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;DA-P
+                    DABEATX&nbsp;</text><text x="-148.68065415278002" y="4.380677213211992"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;DINOS&nbsp;</text><text
+                    x="65.17403600796817" y="-82.52430994584628"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;JEUNE
+                    LOUP&nbsp;</text><text x="-29.7153162504775" y="166.36468620162412"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;QUADRACUP&nbsp;</text><text
+                    x="-119.82183762951884" y="-79.32288002347305"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;CRISS
+                    SWK&nbsp;</text><text x="192.7061610140476" y="42.22766869125345"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;WONDAGURL&nbsp;</text><text
+                    x="-162.88530449792466" y="134.34324347272388"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;TORTOZ&nbsp;</text><text
+                    x="24.155440708667275" y="-110.88524749303161"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;LES
+                    ANTICIPATEURS&nbsp;</text><text x="55.292720005209894" y="235.06246431780792"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;ALPHA
+                    WANN&nbsp;</text><text x="-155.84483068698555" y="-44.65177146019029"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;S.PRI
+                    NOIR&nbsp;</text><text x="180.13568599374747" y="-49.12697852155709"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;JEANJASS&nbsp;</text><text
+                    x="-99.07806277329315" y="211.06894600450948"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;HIM$
+                    (FRA)&nbsp;</text><text x="-84.31866452717212" y="-114.4643772762995"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;GREEN
+                    MONTANA&nbsp;</text><text x="175.13416972554387" y="118.01494491226742"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;IKAZ
+                    BOI&nbsp;</text><text x="-179.70684226547462" y="43.43852813173025"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;PLANET
+                    GIZA&nbsp;</text><text x="110.83065414086286" y="-105.37032113173213"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;DON
+                    TOLIVER&nbsp;</text><text x="-12.876131322323506" y="246.68531045728056"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;JAY
+                    CRITCH&nbsp;</text><text x="-168.01519384321404" y="-93.10624677042743"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;GREEN
+                    HYPNOTIC&nbsp;</text><text x="205.67280813322967" y="-6.124849802633179"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;FAMOUS
+                    DEX&nbsp;</text><text x="-129.06230332202654" y="171.09876241196162"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;IZZY-S&nbsp;</text><text
+                    x="-0.3554398039510395" y="-152.73100888548527"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;WHYG&nbsp;</text><text
+                    x="146.17493300624116" y="158.77475491234378"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;ZEINA&nbsp;</text><text
+                    x="-196.92951907744788" y="-8.089317474604456"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;MANAST
+                    LL’&nbsp;</text><text x="163.02698930148904" y="-95.95298525440724"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;KARYKE&nbsp;</text><text
+                    x="-49.157038337968416" y="212.2804369107212"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;JT
+                    SOUL&nbsp;</text><text x="-132.36435070944117" y="-128.16359031313442"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;WOAHKESPASSE&nbsp;</text><text
+                    x="141.87074019066108" y="24.242371911846444"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;CRVDZ&nbsp;</text><text
+                    x="-95.0430935484765" y="76.3464334758045"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;KILLY&nbsp;</text><text
+                    x="63.637610816544814" y="-141.72299679646085"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;STEVE
+                    BEEZY&nbsp;</text><text x="17.949535082292144" y="146.69682767488356"
+                    style="text-anchor: middle; font-family: Montserrat; fill: rgb(255, 0, 0); font-weight: bold; font-size: 0px;">&nbsp;ADAMN
+                    KILLA&nbsp;</text>
+            </g>
+        </svg></div>
+
+
+
+
+</body>
+
+</html>
